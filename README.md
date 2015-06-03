@@ -26,9 +26,20 @@ You can clone the samples with the following command:
     git clone https://github.com/altherlex/ionic-express-angularjs-demo
 	
 
-Running this sample
+Running this sample IBM Bluemix and local
 ---
-The sample is designed so that it can be easily run locally and then be pushed up to to Bluemix and tested in the cloud. Use the following steps to setup the sample. To test the app you need to have created a Mobile Cloud application on [IBM Bluemix](http://bluemix.net) and you need to make a note of your App ID, App Secret and Route.
+
+- The sample is designed so that it can be easily run locally and then be pushed up to to Bluemix and tested in the cloud. Use the following steps to setup the sample. To test the app you need to have created a Mobile Cloud application on [IBM Bluemix](http://bluemix.net) and you need to make a note of your App ID, App Secret and Route.
+
+- Local
+First, install [Node.js](https://nodejs.org/). Then, install the latest Cordova and Ionic [command-line tools](https://www.npmjs.com/package/ionic).
+
+```
+npm install -g cordova ionic
+cd ionic-express-angularjs-demo
+npm install
+node app.js // localhost:3000
+```
 
 ### Configuration
 
