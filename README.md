@@ -1,6 +1,8 @@
 Ionic + Express + Angularjs + IBM Bluemix (deploy and datas) Demostration
 ===
 
+[Demo](https://myhybridapp.mybluemix.net)
+
 This demo uses the [Ionicframework](https://ionicframework.com) for the mobile web user experience;
 [AngularJS](https://angularjs.org/) as the controller framework. 
 
@@ -14,12 +16,6 @@ Deploy to Bluemix
 1. Download and install the Cloud Foundry CLI from https://github.com/cloudfoundry/cli/releases/tag/v6.0.0
 2. From the sample app directory, run ```cf push ${yourAppName}``` to deploy the app to Bluemix. (Note: Be sure to run ```npm install --production``` and ```bower install``` prior to your ```cf push```)
 3. The sample app can now be tested using your Bluemix URL
-
-
-Demo
----
-
-    https:myhybridapp.mybluemix.net
     
 
 Downloading this sample
