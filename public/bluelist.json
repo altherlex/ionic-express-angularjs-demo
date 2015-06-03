@@ -1,6 +1,6 @@
 {
     "applicationId": "087283fd-6e1b-4b79-a7c4-b0310e571eef",
     "applicationSecret": "9921176f15555d165a2e4d7e895d66a28e260ab7",
-    "applicationRoute": "myhybridapp.mybluemix.net"
+    "applicationRoute": "http://myhybridapp.mybluemix.net"
 }
 
