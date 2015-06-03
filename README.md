@@ -1,22 +1,34 @@
-Sample: bluelist-mobiledata-mobileweb
+Ionic + Express + Angularjs + IBM Bluemix (deploy and datas) Demostration
 ===
 
-The bluelist-mobiledata-mobileweb sample demonstrates how the BlueList app can be hosted and delivered from a Mobile Cloud Code runtime.
+This demo uses the [Ionicframework](https://ionicframework.com) for the mobile web user experience;
+[AngularJS](https://angularjs.org/) as the controller framework. 
+
+The app is hosted inside a Cloud Code [Node.js](https://nodejs.org/) server and loads into a mobile browser or desktop browser. The app then uses the Cloud Code JavaScript SDK to invoke REST services managed in the same Cloud Code runtime. These REST endpoints are managed with [express](http://expressjs.com/). These REST endpoints then map to a set of CRUD (Create, Read, Update and Delete) operations that are then using the JavaScript Data Service SDK to store and manage data into the Mobile Cloud data services that is backed by [Cloudant](https://cloudant.com/).
 
 This sample works with the Mobile Cloud boilerplate available on [IBM Bluemix](https://www.ng.bluemix.net).  With this boilerplate, you can quickly incorporate pre-built, managed, and scalable cloud services into your mobile applications without relying on IT involvement. You can focus on building your mobile applications rather than the complexities of managing the back end infrastructure.
 
-This sample uses the [Ionicframework](https://ionicframework.com) for the mobile web user experience and the  [AngularJS](https://angularjs.org/) as the controller framework. The app is hosted inside a Cloud Code Node.js server and loads into a mobile browser or desktop browser. The app then uses the Cloud Code JavaScript SDK to invoke REST services managed in the same Cloud Code runtime. These REST endpoints are managed with [express](http://expressjs.com/). These REST endpoints then map to a set of CRUD (Create, Read, Update and Delete) operations that are then using the JavaScript Data Service SDK to store and manage data into the Mobile Cloud data services that is backed by [Cloudant](https://cloudant.com/).
+Deploy to Bluemix
+---
 
+1. Download and install the Cloud Foundry CLI from https://github.com/cloudfoundry/cli/releases/tag/v6.0.0
+2. From the sample app directory, run ```cf push ${yourAppName}``` to deploy the app to Bluemix. (Note: Be sure to run ```npm install --production``` and ```bower install``` prior to your ```cf push```)
+3. The sample app can now be tested using your Bluemix URL
+
+
+Demo
+---
+
+    https:myhybridapp.mybluemix.net
+    
 
 Downloading this sample
 ---
 
-You can clone the samples from IBM DevOps Services with the following command:
+You can clone the samples with the following command:
 
-    git clone https://hub.jazz.net/git/mobilecloud/bluelist-mobiledata
+    git clone https://github.com/altherlex/ionic-express-angularjs-demo
 	
-The bluelist-mobiledata-mobileweb code is located in the bluelist-mobiledata/bluelist-mobiledata-mobileweb directory.
-
 
 Running this sample
 ---
@@ -59,11 +71,4 @@ node app
 7. You should see the mobile web user interface now displayed in your browser.
 
 
-Deploy to Bluemix
----
-1. Download and install the Cloud Foundry CLI from https://github.com/cloudfoundry/cli/releases/tag/v6.0.0
-2. From the sample app directory, run ```cf push ${yourAppName}``` to deploy the app to Bluemix. (Note: Be sure to run ```npm install --production``` and ```bower install``` prior to your ```cf push```)
-3. The sample app can now be tested using your Bluemix URL
 
-> Notes.  
- - You can delete and edit items in a list by swiping the list item to the left. This reveals the options `delete` and `edit` options.
