@@ -1,7 +1,7 @@
 Ionic + Express + Angularjs + IBM Bluemix (deploy and datas) Demostration
 ===
 
-[Demo](https://myhybridapp.mybluemix.net)
+[Demo](https://myhybridapp.mybluemix.net) https://myhybridapp.mybluemix.net
 
 This demo uses the [Ionicframework](https://ionicframework.com) for the mobile web user experience;
 [AngularJS](https://angularjs.org/) as the controller framework. 
